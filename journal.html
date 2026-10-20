@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Journal | Unsent</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="journal.css">
+</head>
+
+<body class="journal-page">
+
+    <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand brand-name" href="home.html">unsent.</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="write.html">Write a Letter</a>
+                    </li>
+<li class="nav-item">
+    <a class="nav-link active" href="journal.html">Journal</a>
+</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="letter.html">My Letters</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container journal-container">
+
+        <!-- Journal Heading -->
+        <header class="journal-heading text-center">
+            <p class="eyebrow">A LITTLE SPACE FOR YOURSELF</p>
+
+            <h1>My Journal ♡</h1>
+
+            <p>Same girl · Bigger dreams · Softer heart</p>
+
+            <div class="journal-date">
+                <label for="journalDate">Date:</label>
+                <input type="date" id="journalDate" required>
+            </div>
+        </header>
+
+        <form id="journalForm">
+
+            <div class="row g-4">
+
+                <!-- Today's Feelings -->
+                <div class="col-md-4">
+                    <section class="journal-box">
+                        <h2>Today I Feel ♡</h2>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Happy">
+                            Happy
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Calm">
+                            Calm
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Grateful">
+                            Grateful
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Tired">
+                            Tired
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Overwhelmed">
+                            Overwhelmed
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="feelings" value="Other">
+                            Other
+                        </label>
+                    </section>
+                </div>
+
+                <!-- Today's Thoughts -->
+                <div class="col-md-8">
+                    <section class="journal-box">
+                        <h2>Today's Thoughts ✿</h2>
+
+                        <textarea
+                            id="thoughts"
+                            placeholder="Write whatever is on your mind..."
+                            rows="5"
+                        ></textarea>
+                    </section>
+                </div>
+
+                <!-- Gratitude -->
+                <div class="col-md-7">
+                    <section class="journal-box">
+                        <h2>Gratitude ♡</h2>
+
+                        <input
+                            type="text"
+                            id="gratitude1"
+                            class="journal-input"
+                            placeholder="1. I am grateful for..."
+                        >
+
+                        <input
+                            type="text"
+                            id="gratitude2"
+                            class="journal-input"
+                            placeholder="2. I am grateful for..."
+                        >
+
+                        <input
+                            type="text"
+                            id="gratitude3"
+                            class="journal-input"
+                            placeholder="3. I am grateful for..."
+                        >
+
+                        <input
+                            type="text"
+                            id="gratitude4"
+                            class="journal-input"
+                            placeholder="4. I am grateful for..."
+                        >
+
+                        <input
+                            type="text"
+                            id="gratitude5"
+                            class="journal-input"
+                            placeholder="5. I am grateful for..."
+                        >
+                    </section>
+                </div>
+
+                <!-- Little Joys -->
+                <div class="col-md-5">
+                    <section class="journal-box">
+                        <h2>Little Joys ☼</h2>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="A good book">
+                            A good book
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="Good food">
+                            Good food
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="Nature">
+                            Nature
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="Music">
+                            Music
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="A kind moment">
+                            A kind moment
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="joys" value="Other">
+                            Other
+                        </label>
+                    </section>
+                </div>
+
+                <!-- Today's To-Do -->
+                <div class="col-md-7">
+                    <section class="journal-box">
+                        <h2>Today's To-Do ♡</h2>
+
+                        <input
+                            type="text"
+                            id="todo1"
+                            class="journal-input"
+                            placeholder="One thing I want to do..."
+                        >
+
+                        <input
+                            type="text"
+                            id="todo2"
+                            class="journal-input"
+                            placeholder="Another task..."
+                        >
+
+                        <input
+                            type="text"
+                            id="todo3"
+                            class="journal-input"
+                            placeholder="One more thing..."
+                        >
+
+                        <input
+                            type="text"
+                            id="todo4"
+                            class="journal-input"
+                            placeholder="A little goal..."
+                        >
+
+                        <input
+                            type="text"
+                            id="todo5"
+                            class="journal-input"
+                            placeholder="Something for myself..."
+                        >
+                    </section>
+                </div>
+
+                <!-- Self Care -->
+                <div class="col-md-5">
+                    <section class="journal-box">
+                        <h2>Self Care ♡</h2>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Drink water">
+                            Drink water
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Eat well">
+                            Eat well
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Move my body">
+                            Move my body
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Take a break">
+                            Take a break
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Be kind to myself">
+                            Be kind to myself
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="selfcare" value="Get enough rest">
+                            Get enough rest
+                        </label>
+                    </section>
+                </div>
+
+                <!-- Notes -->
+                <div class="col-md-6">
+                    <section class="journal-box">
+                        <h2>Notes ✎</h2>
+
+                        <textarea
+                            id="notes"
+                            rows="4"
+                            placeholder="Anything else I want to remember..."
+                        ></textarea>
+                    </section>
+                </div>
+
+                <!-- Tomorrow -->
+                <div class="col-md-6">
+                    <section class="journal-box">
+                        <h2>Tomorrow I Look Forward To... ♡</h2>
+
+                        <textarea
+                            id="tomorrow"
+                            rows="4"
+                            placeholder="Something I am looking forward to..."
+                        ></textarea>
+                    </section>
+                </div>
+
+            </div>
+
+            <!-- Save Button -->
+            <div class="text-center journal-actions">
+                <button type="submit" class="btn btn-rose">
+                    Save My Journal
+                </button>
+
+                <button type="reset" class="btn btn-outline-rose">
+                    Clear Form
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Previous Entries -->
+        <section class="saved-journals">
+            <h2>My Previous Entries</h2>
+
+            <div id="savedJournals">
+                <!-- Saved entries will appear here -->
+            </div>
+        </section>
+
+        <footer class="journal-footer text-center">
+            <p>A little progress each day ♡</p>
+        </footer>
+
+    </main>
+
+    <!-- Separate JavaScript File -->
+    <script src="journal.js"></script>
+
+</body>
+</html>

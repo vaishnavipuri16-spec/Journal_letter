@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsent | Your Safe Space</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="home-page">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand brand-name" href="home.html">unsent.</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="write.html">Write a Letter</a>
+                    </li>
+<li class="nav-item">
+    <a class="nav-link" href="journal.html">Journal</a>
+</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="letter.html">My Letters</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4 py-md-5">
+
+        <!-- Welcome -->
+        <section class="welcome-section text-center mb-5">
+            <p class="eyebrow">YOUR LITTLE CORNER OF THE WORLD</p>
+
+            <h1>Welcome to your safe space.</h1>
+
+            <p class="welcome-text">
+                Take a breath. Let your feelings exist.
+                You don't have to figure everything out today.
+            </p>
+        </section>
+
+        <!-- Mood Check-in -->
+        <section class="mood-card card mb-5">
+            <div class="card-body p-4 p-md-5">
+                <div class="text-center mb-4">
+                    <p class="eyebrow">A MOMENT WITH YOURSELF</p>
+                    <h2>How are you feeling today?</h2>
+                    <p class="section-description">
+                        There are no wrong answers. Just be honest with yourself.
+                    </p>
+                </div>
+
+                <div class="mood-options d-flex flex-wrap justify-content-center gap-2">
+                    <button class="btn mood-btn" data-mood="Happy" type="button">
+                        ☀️ Happy
+                    </button>
+                    <button class="btn mood-btn" data-mood="Calm" type="button">
+                        🌿 Calm
+                    </button>
+                    <button class="btn mood-btn" data-mood="Sad" type="button">
+                        🌧️ Sad
+                    </button>
+                    <button class="btn mood-btn" data-mood="Anxious" type="button">
+                        🫧 Anxious
+                    </button>
+                    <button class="btn mood-btn" data-mood="Confused" type="button">
+                        🌙 Confused
+                    </button>
+                    <button class="btn mood-btn" data-mood="Hopeful" type="button">
+                        🌷 Hopeful
+                    </button>
+                </div>
+
+                <label for="moodNote" class="form-label mt-4">
+                    Want to put your feelings into words?
+                </label>
+
+                <textarea id="moodNote" class="form-control"
+                          rows="3"
+                          placeholder="Write whatever is on your mind..."></textarea>
+
+                <div class="text-center mt-4">
+                    <button id="saveMood" class="btn rose-btn" type="button">
+                        Save My Check-in
+                    </button>
+                </div>
+
+                <p id="checkInMessage" class="text-center mt-3 mb-0"
+                   role="status" aria-live="polite"></p>
+
+                <div id="savedCheckIn" class="saved-checkin mt-4"></div>
+            </div>
+        </section>
+
+        <!-- Daily Positive Reminder -->
+        <section class="reminder-section mb-5">
+            <div class="text-center mb-4">
+                <p class="eyebrow">A LITTLE LOVE NOTE TO YOURSELF</p>
+                <h2>A reminder for your heart.</h2>
+                <p class="section-description">
+                    Take what you need today. Leave the rest for another day.
+                </p>
+            </div>
+
+            <div class="reminder-card">
+                <div class="reminder-image">
+                    <img id="reminderImage"
+                         src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85"
+                         alt="Soft golden light over a peaceful landscape">
+                    <div class="image-overlay"></div>
+                    <span class="image-label">A NOTE TO REMEMBER</span>
+                </div>
+
+                <div class="reminder-content">
+                    <p id="reminderCategory" class="eyebrow">
+                        TODAY'S REMINDER
+                    </p>
+
+                    <h3 id="reminderTitle">
+                        You are allowed to begin again.
+                    </h3>
+
+                    <p id="reminderQuote" class="reminder-quote">
+                        You don't have to have everything figured out today.
+                        Take your time. You're still growing.
+                    </p>
+
+                    <div class="reminder-divider"></div>
+
+                    <p class="reminder-signature">with love, from you to you.</p>
+                </div>
+            </div>
+
+            <!-- Reminder Categories -->
+            <div class="text-center mt-4">
+                <p class="category-label">WHAT DOES YOUR HEART NEED TODAY?</p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                    <button class="btn category-btn active"
+                            data-category="Positive Mindset" type="button">
+                        Positive Mindset
+                    </button>
+
+                    <button class="btn category-btn"
+                            data-category="Self-Love" type="button">
+                        Self-Love
+                    </button>
+
+                    <button class="btn category-btn"
+                            data-category="Healing" type="button">
+                        Healing
+                    </button>
+
+                    <button class="btn category-btn"
+                            data-category="Motivation" type="button">
+                        Motivation
+                    </button>
+                </div>
+
+                <button id="anotherReminder" class="btn rose-btn mt-4" type="button">
+                    Show Another Reminder
+                </button>
+            </div>
+        </section>
+
+        <!-- Writing Prompt -->
+        <section class="writing-prompt card mb-5">
+            <div class="card-body text-center p-4 p-md-5">
+                <p class="eyebrow">A GENTLE INVITATION</p>
+                <h2>Words you don't have to send.</h2>
+
+                <p class="section-description">
+                    Sometimes, letting it out is enough.
+                </p>
+
+                <p class="prompt-text">
+                    "What is one thing your heart has been trying to tell you?"
+                </p>
+
+                <a href="write.html" class="btn rose-btn">
+                    Write Your Letter
+                </a>
+            </div>
+        </section>
+
+        <!-- Recently Saved Letters -->
+        <section class="recent-letters-section mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <p class="eyebrow mb-1">YOUR PRIVATE LITTLE WORLD</p>
+                    <h2 class="mb-0">Recently written.</h2>
+                </div>
+
+                <a href="letter.html" class="view-all-link">View all →</a>
+            </div>
+
+            <div id="recentLetters" class="row g-3">
+                <!-- Saved letters are added by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="home-footer text-center py-4">
+        <p class="mb-1">unsent.</p>
+        <small>A safe space for everything you never said.</small>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,751 @@
+
+/* General page styling */
+.landing-page {
+    min-height: 100vh;
+    background-image: url("unsent.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #602437;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Brand name */
+.brand-name {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #602437;
+    text-decoration: none;
+}
+
+.brand-name:hover {
+    color: #8A2846;
+}
+
+/* Main heading */
+.landing-page h1 {
+    font-family: 'Playfair Display', serif;
+    color: #602437;
+    line-height: 1.15;
+}
+
+.landing-page h1 em {
+    color: #8A2846;
+    font-weight: 400;
+}
+
+/* Small uppercase text */
+.eyebrow {
+    color: #8A2846;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Description */
+.hero-description {
+    color: #602437;
+    line-height: 1.8;
+}
+
+.reassurance,
+.footer-message {
+    color: #8A2846;
+}
+
+/* Start button */
+.landing-page .btn-dark {
+    background-color: #602437;
+    border: 1px solid #602437;
+    border-radius: 12px;
+    color: #FFF4F5;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.landing-page .btn-dark:hover {
+    background-color: #8A2846;
+    border-color: #8A2846;
+    color: #FFF4F5;
+    transform: translateY(-2px);
+}
+
+/* Quote card */
+.quote-card {
+    background-color: rgba(255, 244, 245, 0.94);
+    border: 1px solid rgba(96, 36, 55, 0.12);
+    border-radius: 24px;
+    color: #602437;
+}
+
+/* Quote heading */
+.quote-heading {
+    font-family: 'Playfair Display', serif;
+    color: #602437;
+    line-height: 1.4;
+}
+
+/* Quote description */
+.quote-description {
+    color: #8A2846;
+    line-height: 1.7;
+}
+
+/* Decorative lines */
+.decorative-line {
+    width: 55px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #E05780;
+}
+.landing-page a {
+    transition: 0.3s ease;
+}
+
+/* =====================================
+   UNSENT - ROSE ROYALE HOME PAGE
+===================================== */
+
+.home-page {
+    background-image: url("home.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #602437;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3,
+.brand-name {
+    font-family: "Playfair Display", serif;
+    color: #602437;
+}
+
+.home-page h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.home-page h2 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+.home-page h3 {
+    font-size: clamp(1.6rem, 3vw, 2.25rem);
+    line-height: 1.35;
+}
+
+.home-page .navbar {
+    background: transparent;
+    padding: 18px 0;
+}
+
+.home-page .brand-name {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.home-page .nav-link {
+    color: #602437;
+    margin-left: 14px;
+    transition: color 0.2s ease;
+}
+
+.home-page .nav-link:hover,
+.home-page .nav-link.active {
+    color: #B9375E;
+}
+
+.home-page .navbar-toggler {
+    border-color: rgba(96, 36, 55, 0.35);
+}
+
+.home-page .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(185, 55, 94, 0.15);
+}
+
+.welcome-section {
+    padding: 30px 0 10px;
+}
+
+.eyebrow {
+    color: #8A2846;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.welcome-text,
+.section-description {
+    color: #78515D;
+    max-width: 650px;
+    margin: 14px auto 0;
+    line-height: 1.8;
+}
+
+.mood-card,
+.writing-prompt {
+    background: rgba(255, 244, 245, 0.68) !important;
+    border: 1px solid rgba(138, 40, 70, 0.18) !important;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(96, 36, 55, 0.08) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.mood-card .card-body,
+.writing-prompt .card-body {
+    background: transparent;
+}
+
+.mood-btn,
+.category-btn {
+    border: 1px solid rgba(138, 40, 70, 0.3);
+    border-radius: 30px;
+    padding: 10px 18px;
+    color: #602437;
+    background: rgba(255, 244, 245, 0.65);
+    transition: all 0.2s ease;
+}
+
+.mood-btn:hover,
+.mood-btn.selected,
+.category-btn:hover,
+.category-btn.active {
+    background: #8A2846;
+    border-color: #8A2846;
+    color: #FFF4F5;
+}
+
+.home-page .form-label {
+    color: #602437;
+    font-weight: 500;
+}
+
+.home-page textarea.form-control {
+    background: rgba(255, 244, 245, 0.8);
+    border: 1px solid rgba(138, 40, 70, 0.25);
+    border-radius: 14px;
+    color: #602437;
+    resize: vertical;
+}
+
+.home-page textarea.form-control:focus {
+    background: #FFF4F5;
+    border-color: #B9375E;
+    box-shadow: 0 0 0 0.2rem rgba(185, 55, 94, 0.12);
+}
+
+.home-page textarea::placeholder {
+    color: #A27B86;
+}
+
+.rose-btn {
+    background: #8A2846;
+    border: 1px solid #8A2846;
+    border-radius: 30px;
+    color: #FFF4F5;
+    padding: 11px 25px;
+    transition: all 0.25s ease;
+}
+
+.rose-btn:hover {
+    background: #602437;
+    border-color: #602437;
+    color: #FFF4F5;
+    transform: translateY(-2px);
+}
+
+.saved-checkin {
+    color: #78515D;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.saved-checkin:empty {
+    display: none;
+}
+
+.saved-checkin p {
+    margin-bottom: 6px;
+}
+
+/* =====================================
+   DAILY POSITIVE REMINDER
+===================================== */
+
+.reminder-card {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid rgba(138, 40, 70, 0.18);
+    border-radius: 22px;
+    background: rgba(255, 244, 245, 0.82);
+    box-shadow: 0 10px 30px rgba(96, 36, 55, 0.12);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.reminder-image {
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    background: #602437;
+}
+
+.reminder-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 55%;
+    filter: saturate(0.72);
+    transition: transform 0.6s ease;
+}
+
+.reminder-card:hover .reminder-image img {
+    transform: scale(1.035);
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(45, 18, 29, 0.55),
+        rgba(45, 18, 29, 0.03) 75%
+    );
+}
+
+.image-label {
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+    color: #FFF4F5;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.reminder-content {
+    padding: 35px 30px;
+    text-align: center;
+}
+
+.reminder-content h3 {
+    max-width: 650px;
+    margin: 0 auto 16px;
+}
+
+.reminder-quote {
+    color: #78515D;
+    max-width: 580px;
+    margin: 0 auto;
+    font-size: 1.02rem;
+    line-height: 1.9;
+}
+
+.reminder-divider {
+    height: 1px;
+    width: 70px;
+    background: #B9375E;
+    margin: 24px auto 18px;
+    opacity: 0.55;
+}
+
+.reminder-signature {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #8A2846;
+    margin-bottom: 0;
+}
+
+.category-label {
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #8A2846;
+}
+
+.writing-prompt .prompt-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #8A2846;
+    line-height: 1.8;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+.recent-letters-section h2 {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+}
+
+.view-all-link {
+    color: #8A2846;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.view-all-link:hover {
+    color: #602437;
+    text-decoration: underline;
+}
+
+.recent-letter-card {
+    height: 100%;
+    padding: 22px;
+    border: 1px solid rgba(138, 40, 70, 0.16);
+    border-radius: 17px;
+    background: rgba(255, 244, 245, 0.72);
+    box-shadow: 0 5px 18px rgba(96, 36, 55, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.recent-letter-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.recent-letter-card p {
+    color: #78515D;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.empty-letters {
+    text-align: center;
+    color: #78515D;
+    padding: 25px;
+    border: 1px dashed rgba(138, 40, 70, 0.3);
+    border-radius: 17px;
+    background: rgba(255, 244, 245, 0.45);
+}
+
+.home-footer {
+    color: #78515D;
+    font-size: 0.9rem;
+}
+
+.home-footer p {
+    font-family: "Playfair Display", serif;
+    color: #602437;
+    font-size: 1.5rem;
+}
+
+.home-footer small {
+    letter-spacing: 0.3px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 767px) {
+    .home-page {
+        background-attachment: scroll;
+    }
+
+    .home-page .navbar {
+        padding: 12px 0;
+    }
+
+    .home-page .nav-link {
+        margin-left: 0;
+        padding: 9px 0;
+    }
+
+    .welcome-section {
+        padding-top: 20px;
+    }
+
+    .reminder-image {
+        height: 220px;
+    }
+
+    .reminder-content {
+        padding: 28px 20px;
+    }
+
+    .mood-btn,
+    .category-btn {
+        padding: 9px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ===== LETTERS PAGE ===== */
+
+.letters-page {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #602437;
+    background-image: url("home.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===== NAVBAR ===== */
+
+.letters-navbar {
+    width: 100%;
+    padding: 24px 0;
+    background: transparent;
+}
+
+.letters-nav-inner {
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.letters-brand {
+    color: #602437;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.letters-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.letters-nav-links a {
+    color: #602437;
+    font-size: 19px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.letters-nav-links a:hover,
+.letters-nav-links a.current {
+    color: #B9375E;
+}
+
+/* ===== SAVED LETTERS SECTION ===== */
+
+.saved-letters-section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto 80px;
+}
+
+.saved-letters-heading {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.letters-eyebrow {
+    margin-bottom: 12px;
+    color: #8A2846;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.saved-letters-heading h2 {
+    margin: 0;
+    color: #602437;
+    font-family: Georgia, serif;
+    font-size: 42px;
+}
+
+/* ===== LETTER CARDS ===== */
+
+.saved-letters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.saved-letter-card {
+    min-height: 220px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 244, 245, 0.88);
+    border: 1px solid rgba(96, 36, 55, 0.15);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(96, 36, 55, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.saved-letter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(96, 36, 55, 0.14);
+}
+
+.saved-letter-date {
+    margin: 0 0 14px;
+    color: #8A2846;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.saved-letter-card h3 {
+    margin: 0 0 14px;
+    color: #602437;
+    font-family: Georgia, serif;
+    font-size: 23px;
+}
+
+.saved-letter-preview {
+    flex-grow: 1;
+    margin: 0 0 22px;
+    color: #704653;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.saved-letter-tag {
+    align-self: flex-start;
+    padding: 7px 14px;
+    color: #8A2846;
+    background: #FFCAD4;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ===== FOOTER ===== */
+
+.letters-footer {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    background: transparent;
+}
+
+.letters-footer-brand {
+    color: #602437;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    text-decoration: none;
+}
+
+.letters-footer p {
+    margin: 12px 0 0;
+    color: #8A2846;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* ===== LAPTOP LAYOUT ===== */
+
+    .letters-nav-links {
+        gap: 24px;
+    }
+
+    .letters-nav-links a {
+        font-size: 16px;
+    }
+
+    .saved-letters-section {
+        width: 90%;
+    }
+
+    .saved-letters-grid {
+        gap: 20px;
+    }
+
+    .saved-letter-card {
+        padding: 22px;
+    }
+
+/* ===== WRITE LETTER PAGE ===== */
+
+.write-page {
+    min-height: 100vh;
+    background-image: url("home.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #602437;
+    font-family: "DM Sans", sans-serif;
+}
+
+.write-page .navbar {
+    background: transparent;
+    padding: 18px 0;
+}
+
+.write-page .navbar .brand-name {
+    color: #602437;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.write-page .nav-link {
+    color: #602437;
+    margin-left: 14px;
+}
+
+.write-page .nav-link:hover,
+.write-page .nav-link.active {
+    color: #B9375E;
+}
+
+.write-page h1 {
+    color: #602437;
+    font-family: "Playfair Display", serif;
+}
+
+.write-page .lead {
+    color: #78515D !important;
+}
+
+.write-page .card {
+    background: rgba(255, 244, 245, 0.78);
+    border: 1px solid rgba(138, 40, 70, 0.15) !important;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.write-page .form-label {
+    color: #602437;
+}
+
+.write-page .form-control {
+    background: rgba(255, 244, 245, 0.85);
+    border: 1px solid rgba(138, 40, 70, 0.22);
+    border-radius: 10px;
+    color: #602437;
+}
+
+.write-page .form-control:focus {
+    background: #FFF4F5;
+    border-color: #B9375E;
+    box-shadow: 0 0 0 0.2rem rgba(185, 55, 94, 0.12);
+}
+
+.write-page .btn-dark {
+    background: #602437;
+    border-color: #602437;
+    color: #FFF4F5;
+    border-radius: 10px;
+}
+
+.write-page .btn-dark:hover {
+    background: #8A2846;
+    border-color: #8A2846;
+}
